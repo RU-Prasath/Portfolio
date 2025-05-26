@@ -5,6 +5,7 @@ import TextArea from "../../components/common/TextArea";
 import { Button } from "../../components/common/Button";
 import { contactSec } from "../../data/constants";
 import "./Contact.css";
+import { apiRoutes } from "../../services/apiRoutes";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`https://myportfolio-ochre-tau.vercel.app/api/contact`, {
+      const res = await fetch(`${process.env.REACT_APP_BASE_URL}/${apiRoutes.contact}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
