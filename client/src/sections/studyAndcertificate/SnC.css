@@ -1,0 +1,35 @@
+.stuCer {
+    font-size: 38px;
+    text-align: center;
+}
+
+.stuCerBg {
+    border: transparent;
+    border-radius: 24px 0;
+    background-color: rgba(87, 249, 87, 70%);
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+.stuCerBgOne {
+    border: 2px solid rgba(87, 249, 87, 70%);
+    border-radius: 0 24px;
+    background-color: transparent;
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+.stuCerTitle {
+    font-size: 20px;
+    padding-bottom: 7px;
+}
+
+@media (max-width:768px) {
+    .stuCer {
+        font-size: 28px;
+    }
+
+    .stuCerTitle {
+        font-size: 18px;
+    }
+}
