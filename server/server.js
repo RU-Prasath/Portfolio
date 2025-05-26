@@ -28,14 +28,7 @@ const __dirname = path.dirname(__filename);
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 
 //middleware
-// app.use(cors({ origin: 'https://ruportfolio.vercel.app',
-//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-//   allowedHeaders: ['Content-Type']
-// }));
-// app.options('*', cors());
 app.use(cors());
-
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
