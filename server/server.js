@@ -55,6 +55,10 @@ app.use("/study", studyRoute);
 app.use("/certificate", certificateRoute);
 app.use("/api", contactRoute)
 
+app.get('/', (req, res) => {
+  res.send('Backend is running');
+});
+
 //server start
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
