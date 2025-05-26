@@ -18,16 +18,17 @@
 
 .myAboutImg {
     box-shadow: 10px -10px 20px rgba(87, 249, 87, 0.5);
+    display: none;
 }
 
-.aboutLeftContent {
+/* .aboutLeftContent {
     position: absolute;
     bottom: -10%;
     left: -10%;
     transform: translate(-10%, 10%);
     text-align: center;
     z-index: -1;
-}
+} */
 
 .aboutLeftContent img {
     width: 100%;

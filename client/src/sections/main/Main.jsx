@@ -19,12 +19,12 @@ const Main = () => {
             <Button text={mainSec.cvBtnText} className="cvBtn fw" />
           </a>
         </div>
-        <div className="mainRight col-12 col-md-6">
+        <div className="mainRight d-none d-md-flex col-md-6">
           <div className="mainRightImg">
             <img src={mainSec.mainBgImg.src} alt={mainSec.mainBgImg.alt} />
-            <div className="mainRightImg2">
+            {/* <div className="mainRightImg2">
               <img src={mainSec.mainImg.src} alt={mainSec.mainImg.alt} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
