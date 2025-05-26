@@ -33,9 +33,7 @@ app.use("/images", express.static(path.join(__dirname, "public/images")));
 //   allowedHeaders: ['Content-Type']
 // }));
 // app.options('*', cors());
-app.use(cors({
-  origin: 'https://ruportfolio.vercel.app',
-  }));
+app.use(cors());
 
 
 app.use(express.json());
