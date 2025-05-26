@@ -60,7 +60,7 @@ const Projects = () => {
                         const skill = getSkillById(tech);
                         return skill ? (
                           <div key={index} className="me-2 projectTechCon p-0">
-                            <img src={skill.img} alt={skill.name} className="techIcon" />
+                            <img src={`${process.env.REACT_APP_BASE_URL}${skill.img}`} alt={skill.name} className="techIcon" />
                           </div>
                         ) : ('')
                       })}
