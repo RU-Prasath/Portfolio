@@ -1,0 +1,30 @@
+.logo {
+    font-size: 28px;
+}
+
+.theme {
+    padding: 0;
+}
+
+.hireBtn {
+    border: var(--primary-color) 2px solid;
+    background-color: transparent;
+    border-radius: 24px;
+    padding: 8px 36px;
+    cursor: pointer;
+}
+
+.hireBtn:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color)!important;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .hireBtn {
+        display: none;
+    }
+}

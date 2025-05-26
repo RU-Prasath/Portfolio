@@ -1,0 +1,78 @@
+.aboutSec h2 {
+    font-size: 38px;
+}
+
+.aboutRowContent {
+    padding: 50px 0;
+}
+
+.aboutLeft {
+    position: relative;
+    display: block;
+}
+
+.aboutLeft img {
+    width: 100%;
+    border-radius: 24px 0;
+}
+
+.myAboutImg {
+    box-shadow: 10px -10px 20px rgba(87, 249, 87, 0.5);
+}
+
+.aboutLeftContent {
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    transform: translate(-10%, 10%);
+    text-align: center;
+    z-index: -1;
+}
+
+.aboutLeftContent img {
+    width: 100%;
+}
+
+.aboutRight p {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.aboutBtn {
+    border: var(--primary-color) 2px solid;
+    background-color: transparent;
+    border-radius: 0 24px 0 24px;
+    padding: 8px 36px;
+    color: var(--text-color);
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+.aboutBtn:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color)!important;
+}
+
+@media (max-width: 768px) {
+    .aboutRowContent {
+        padding: 20px 0 0;
+    }
+
+    .aboutSec h2 {
+        font-size: 28px;
+    }
+
+    .aboutRight p {
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    .aboutBtn {
+        padding: 8px 24px;
+        font-size: 16px;
+    }
+
+    .myAboutImg {
+        box-shadow: unset;
+    }
+}

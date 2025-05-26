@@ -1,0 +1,42 @@
+.serviceBgText {
+  font-size: clamp(60px, 10vw, 160px);
+}
+
+.serviceText {
+  font-size: 38px;
+}
+
+.serviceCardContainer {
+  gap: 32px;
+}
+
+.serviceCard {
+  border: 2px solid var(--primary-color);
+  border-radius: 24px;
+  width: 300px;
+  margin-bottom: 34px;
+  box-shadow: 2px 4px 70px -28px var(--primary-color);
+}
+
+.serviceCardContent {
+  padding: 25px 15px;
+}
+
+.serviceCardContent h5 {
+  font-size: 24px;
+  padding-bottom: 14px;
+}
+
+.serviceCardContent p {
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .serviceText {
+    font-size: 28px;
+  }
+  
+  .serviceCardContainer {
+    gap: 0;
+  }
+}

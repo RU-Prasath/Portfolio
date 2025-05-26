@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kadwa:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #57f957;
+  --bg-color: #101020;
+  --text-color: #ffffff;
+  --font-heading: 38px;
+  --font-family: "Kadwa", serif;
+  --font-family-alt: "K2D", sans-serif;
+  --font-weight: 550;
+  --font-light: rgba(255, 255, 255, 10%);
+  --font-light-green: rgba(87, 249, 87, 10%);
+}
+
+[data-theme="light"] {
+  --bg-color: #fffefa;
+  --text-color: #101020;
+  --primary-color: #3cc03c;
+  --font-light: rgba(0, 0, 0, 10%);
+}
+
+[data-theme="dark"]:hover {
+  --bg-color: #101020;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.3s ease;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.k2d {
+  font-family: var(--font-family-alt);
+}
+
+.kadwa {
+  font-family: var(--font-family);
+}
+
+.text-primary {
+  color: var(--text-color) !important;
+}
+
+.icon {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.green {
+  color: var(--primary-color);
+}
+
+.fw {
+  font-weight: var(--font-weight);
+}
+
+.font-light {
+  color: var(--font-light);
+}
+
+.font-light-green {
+  color: var(--font-light-green);
+}

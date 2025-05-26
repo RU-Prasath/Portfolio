@@ -1,0 +1,144 @@
+.experienceSec {
+  padding: 50px 0;
+}
+
+.experienceSec h5 {
+  font-size: 38px;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color);
+  top: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.left::after {
+  right: -10px;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item.right::after {
+  left: -10px;
+}
+
+.timeline-date {
+  font-size: 20px;
+}
+
+.timeline-item-date {
+  position: absolute;
+  top: 0;
+  width: unset;
+  font-size: 14px;
+  color: var(--primary-color);
+  padding: 0 40px
+}
+
+.timeline-item-date.left {
+  left: -300px;
+}
+
+.timeline-item-date.right {
+  right: -300px;
+}
+
+.timeline-content {
+  background-color: var(--bg-color);
+}
+
+.company-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.roleTitle {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .experienceSec h5 {
+    font-size: 28px;
+  }
+  
+  .timeline::after {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-item::after {
+    left: 0!important;
+  }
+
+  .timeline-item-date {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .timeline-item-date.left,
+  .timeline-item-date.right {
+    left: 0;
+    right: 0;
+  }
+
+  .roleTitle {
+    font-size: 22px;
+  }
+
+  .timeline-date {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,106 @@
+.projectSec {
+    padding: 70px 0;
+}
+
+.projectBgCon p {
+    font-size: clamp(60px, 10vw, 160px);
+}
+
+.projectBgCon {
+    position: relative;
+    width: 100%;
+}
+
+.projectText h6 {
+    font-size: 38px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projectCardTitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: unset;
+    top: unset;
+    left: unset;
+    width: unset;
+    color: var(--primary-color)!important;
+}
+
+.carousel-control-prev {
+    transform: translate(-45px, -7px);
+}
+
+.carousel-control-next {
+    transform: translate(0px, -7px);
+}
+
+.projectImgCon {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: 2px solid var(--primary-color);
+    padding: 16px;
+    background-color: #101020;
+}
+
+.projectImgCon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 24px;
+}
+
+.projectDescription p {
+    font-size: 17px;
+    line-height: 33px;
+}
+
+.projectTechCon {
+    width: 50px;
+    height: 50px;
+}
+
+.projectTechCon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .projectDescription p {
+        font-size: 16px;
+    }
+
+    .projectImgCon {
+        width: 250px;
+        height: 250px;
+    }
+
+    .projectCardTitle {
+        font-size: 20px;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+
+    .techConAlign::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .projectSec {
+        padding: 0;
+    }
+}

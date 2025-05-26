@@ -1,0 +1,74 @@
+.mainSection {
+  position: relative;
+}
+
+.mainBgText {
+  font-size: clamp(60px, 10vw, 160px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.mainH1,
+.mainPara {
+  padding-bottom: 26px;
+}
+
+.mainPara {
+  max-width: 538px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.cvBtn {
+  color: var(--bg-color);
+  padding: 5px 26px;
+  border-radius: 0 24px 0 24px;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  border: 1.5px solid transparent;
+}
+
+.cvBtn:hover {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1.5px solid var(--primary-color);
+}
+
+.mainRightImg {
+    position: relative;
+    display: block;
+}
+
+.mainRightImg img {
+  width: 100%;
+  height: auto;
+}
+
+.mainRightImg2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.mainRightImg2 img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .mainLeft {
+    padding-top: 50px;
+  }
+
+  .mainPara {
+    font-size: 16px;
+  }
+
+  .cvBtn {
+    font-size: 16px;
+  }
+}
