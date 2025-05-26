@@ -14,7 +14,7 @@ const AboutMe = () => {
   if (error) return <p className="text-center green fw py-2">Something went wrong...</p>;
 
   return (
-    <section className="aboutSec">
+    <section className="aboutSec pt-3 pt-md-0">
       <div className="container">
         <h2 className="k2d fw">
           <span className="green">{aboutSec.aboutTitleSpan}</span> {aboutSec.aboutTitle}
