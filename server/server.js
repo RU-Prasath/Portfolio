@@ -35,18 +35,7 @@ app.use("/images", express.static(path.join(__dirname, "public/images")));
 // app.options('*', cors());
 app.use(cors({
   origin: 'https://ruportfolio.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type'],
-  credentials: true
-}));
-
-// Optional: Handle preflight requests globally
-app.options('*', (req, res) => {
-  res.header('Access-Control-Allow-Origin', 'https://ruportfolio.vercel.app');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  res.sendStatus(200);
-});
+  }));
 
 
 app.use(express.json());
