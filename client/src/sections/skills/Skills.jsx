@@ -64,7 +64,7 @@ const Skills = () => {
                     <div key={index} className="row d-flex align-items-center justify-content-center gap-4 gap-md-0 pb-4 skillCon">
                       <div className="col-12 col-md-6 d-flex align-items-center skillImgCon">
                         <div className="skillImg">
-                          <img src={`${process.env.REACT_APP_BASE_URL}${skill.img}`} alt='Skills Image' />
+                          <img src={`${process.env.REACT_APP_BASE_URL}${skill.img}`} alt='Skills' />
                         </div>
                         <p className="skillName">{skill.name}</p>
                       </div>

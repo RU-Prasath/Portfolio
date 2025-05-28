@@ -40,7 +40,7 @@ const Experience = () => {
                   <p className="company-name">{item.company}</p>
                   <ul>
                     {item.responsibilities.map((point, index) => (
-                      <div key={index}><li>{point}</li><br /></div>
+                      <><li key={index}>{point}</li><br /></>
                     ))}
                   </ul>
                 </div>
