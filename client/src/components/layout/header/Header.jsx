@@ -15,7 +15,7 @@ const Header = () => {
         <p className="logo k2d fw"><span className="green">&lt;</span> RU <span className="green">/&gt;</span></p>
       </div>
       <div className="d-flex align-items-center gap-3">
-        <Button text={themeIcon} onClick={toggleTheme} className="theme" />
+        <Button text={themeIcon} onClick={toggleTheme} className="theme" aria-label="theme" />
         <a href={navSec.gitHub} target="blank">{iconifyIcons.github}</a>
         <a href={navSec.linkedIn} target="blank">{iconifyIcons.linkedIn}</a>
         <a href={navSec.hireMeLink}><Button text={navSec.hireMeBtn} className="fw text-primary hireBtn" /></a>
