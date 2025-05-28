@@ -42,7 +42,7 @@ const Projects = () => {
                   <div className="row">
                     <div className="col-12 col-md-3 mb-3 mb-md-0">
                       <div className="projectImgCon">
-                        <img src={`${process.env.REACT_APP_BASE_URL}${project.img}`} alt={project.title} className="d-block w-100" />
+                        <img src={`${process.env.REACT_APP_BASE_URL}${project.img}`} alt={project.name} className="d-block w-100" />
                       </div>
                     </div>
                     <div className="col-12 col-md-9 projectDescription">
