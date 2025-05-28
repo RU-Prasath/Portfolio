@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <Button text={iconifyIcons.upArrow} style={style} onClick={scrollToTop} name='UpToggleBtn'></Button>
+      <Button text={iconifyIcons.upArrow} style={style} onClick={scrollToTop} aria-label='UpToggleBtn'></Button>
       <Header />
       <Index />
       <Footer />
